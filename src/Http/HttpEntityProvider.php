@@ -15,12 +15,7 @@ readonly final class HttpEntityProvider
     {
     }
 
-    public function getAsJsonResponse(string $slug): JsonResponse
-    {
-        return new JsonResponse($this->getHandler($slug)->getResponseEntities());
-    }
-
-    private function getHandler(string $slug): DictionaryHandlerInterface
+    public function getHandler(string $slug): DictionaryHandlerInterface
     {
         try {
             $handler = $this->handlerFactory->getHandler($slug);

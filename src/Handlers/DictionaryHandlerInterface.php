@@ -14,6 +14,8 @@ interface DictionaryHandlerInterface
 
     public function authorize(): bool;
 
+    public function getResponseCacheSeconds(): ?int;
+
     public function toPublish(): bool;
 
     public function clearCache(): void;

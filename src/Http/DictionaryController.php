@@ -13,6 +13,13 @@ readonly final class DictionaryController
 
     public function get(string $slug): JsonResponse
     {
-        return $this->entityProvider->getAsJsonResponse($slug);
+        $handler = $this->entityProvider->getHandler($slug);
+        $response = new JsonResponse($handler->getResponseEntities());
+        if (($seconds = $handler->getResponseCacheSeconds()) !== null) {
+            $response->withHeaders([
+                'Cache-Control' => 'public, max-age=' . $seconds
+            ]);
+        }
+        return $response;
     }
 }

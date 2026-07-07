@@ -2,20 +2,18 @@
 
 namespace Inclus16\LaravelDictionary\Commands;
 
+use Illuminate\Console\Attributes\Description;
+use Illuminate\Console\Attributes\Signature;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Storage;
 use Inclus16\LaravelDictionary\Handlers\DictionaryHandlerInterface;
 
+#[Description('Creates one json file with data from getData method from every dictionary in config.dictionary')]
+#[Signature('dictionaries:publish')]
 class PublishDictionariesCommand extends Command
 {
-    public $name = 'Dictionaries publishing';
-
-    public $signature = 'dictionaries:publish';
-
-    public $description = 'Creates one json file with data from getData method from every dictionary in config.dictionary';
-
     public function handle(): void
     {
         $handlerClasses = Config::array('dictionary.handlers');
