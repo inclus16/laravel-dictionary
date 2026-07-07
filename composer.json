@@ -1,0 +1,43 @@
+{
+  "name": "inclus16/laravel-dictionary",
+  "description": "Provide cached collection-based data in laravel",
+  "type": "library",
+  "version": "dev-1.0.0",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sergey Grigoriev",
+      "email": "sergey.mindblast@mail.ru"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Inclus16\\LaravelDictionary\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Inclus16\\LaravelDictionary\\Tests\\": "tests/"
+    }
+  },
+  "require": {
+    "php": "^8.5",
+    "illuminate/console": "^13.0",
+    "illuminate/support": "^13.0",
+    "illuminate/http": "^13.0",
+    "illuminate/validation": "^13.0",
+    "illuminate/testing": "^13.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^13.0",
+    "orchestra/testbench": "v11.1.0",
+    "mockery/mockery": "^1.6.12"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Inclus16\\LaravelDictionary\\DictionaryServiceProvider"
+      ]
+    }
+  }
+}
