@@ -2,7 +2,6 @@
   "name": "inclus16/laravel-dictionary",
   "description": "Provide cached collection-based data in laravel",
   "type": "library",
-  "version": "dev-1.0.0",
   "license": "MIT",
   "authors": [
     {

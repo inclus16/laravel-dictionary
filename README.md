@@ -1,13 +1,13 @@
-# Laravel dictionaries
+# Laravel dictionary
 
-Laravel dictionaries is a package, that manages access, validation and cache for your collection-based data.
+Laravel dictionary is a package, that manages access, validation and cache for your collection-based data.
 
 A dictionary is a static (or nearly static) set of data that needs to be reread very often.
 
 ## Install
 
 ``` bash
-composer require inclus16/laravel-dictionary
+//TODO
 ```
 The package will automatically register a service provider
 Publish the package's configuration and translations by running:
@@ -173,3 +173,7 @@ php artisan dictionaries:publish
 this command with create json files that contains data of dictionary.
 for each dictionary there will be created a file, named {dictionarySlug}.json in disk from config: dictionary.publishDisk.
 Then you can handle this files directly via nginx as static files
+### Http access
+```http request
+GET /api/dictionary/{slug}
+```
