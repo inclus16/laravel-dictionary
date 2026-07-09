@@ -1,13 +1,23 @@
 # Laravel dictionary
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/inclus16/laravel-dictionary.svg?style=flat-square)](https://packagist.org/packages/inclus16/laravel-dictionaru)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/packagist/dt/inclus16/laravel-dictionary.svg?style=flat-square)](https://packagist.org/packages/inclus16/laravel-dictionary)
+
+
 Laravel dictionary is a package, that manages access, validation and cache for your collection-based data.
 
 A dictionary is a static (or nearly static) set of data that needs to be reread very often.
 
+## Prerequirements
+PHP >= 8.5
+
+Laravel >=13
+
 ## Install
 
 ``` bash
-//TODO
+composer require inclus16/laravel-dictionary:v1.0-RC
 ```
 The package will automatically register a service provider
 Publish the package's configuration and translations by running:
@@ -37,7 +47,7 @@ class PageType extends \Inclus16\LaravelDictionary\Handlers\AbstractDictionaryHa
     }
 }
 ```
-this class must be registered in config dictionary.php:
+This class must be registered in config dictionary.php:
 ```php
 return [
     'default_cache_store' => env('DICTIONARY_DEFAULT_CACHE_STORE', 'array'),
