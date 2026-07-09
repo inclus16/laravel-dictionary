@@ -1,5 +1,10 @@
 # Laravel dictionary
 
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/inclus16/laravel-dictionary.svg?style=flat-square)](https://packagist.org/packages/inclus16/laravel-dictionaru)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Total Downloads](https://img.shields.io/packagist/dt/inclus16/laravel-dictionary.svg?style=flat-square)](https://packagist.org/packages/inclus16/laravel-dictionary)
+
+
 Laravel dictionary is a package, that manages access, validation and cache for your collection-based data.
 
 A dictionary is a static (or nearly static) set of data that needs to be reread very often.
