@@ -4,10 +4,15 @@ Laravel dictionary is a package, that manages access, validation and cache for y
 
 A dictionary is a static (or nearly static) set of data that needs to be reread very often.
 
+## Prerequirements
+PHP >= 8.5
+
+Laravel >=13
+
 ## Install
 
 ``` bash
-//TODO
+composer require inclus16/laravel-dictionary:v1.0-RC
 ```
 The package will automatically register a service provider
 Publish the package's configuration and translations by running:
@@ -37,7 +42,7 @@ class PageType extends \Inclus16\LaravelDictionary\Handlers\AbstractDictionaryHa
     }
 }
 ```
-this class must be registered in config dictionary.php:
+This class must be registered in config dictionary.php:
 ```php
 return [
     'default_cache_store' => env('DICTIONARY_DEFAULT_CACHE_STORE', 'array'),
