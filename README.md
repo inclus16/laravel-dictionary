@@ -17,7 +17,7 @@ Laravel >=13
 ## Install
 
 ``` bash
-composer require inclus16/laravel-dictionary:v1.0.0
+composer require inclus16/laravel-dictionary:v1.0.1
 ```
 The package will automatically register a service provider
 Publish the package's configuration and translations by running:
