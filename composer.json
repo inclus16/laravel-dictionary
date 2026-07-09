@@ -9,6 +9,9 @@
       "email": "sergey.mindblast@mail.ru"
     }
   ],
+  "scripts": {
+    "test": "./vendor/bin/phpunit tests"
+  },
   "autoload": {
     "psr-4": {
       "Inclus16\\LaravelDictionary\\": "src/"
